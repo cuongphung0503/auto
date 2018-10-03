@@ -5,7 +5,7 @@ pipeline {
     stages {
         /* "Build" and "Test" stages omitted */
 
-        stage('Check out') {
+        stage('Checkout') {
             steps {
                 sh 'git clone https://github.com/cuongphung0503/auto.git'
             }
