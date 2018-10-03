@@ -1,6 +1,6 @@
 pipeline {
      agent {
-        docker { image 'amazonlinux:1' }
+        docker { image 'library/amazonlinux' }
     }
     stages {
         /* "Build" and "Test" stages omitted */
