@@ -1,19 +1,11 @@
 pipeline {
-     agent {
+    agent {
         docker { image 'node:7-alpine' }
     }
     stages {
-        /* "Build" and "Test" stages omitted */
-
-        stage('Checkout') {
+        stage('Test') {
             steps {
-                sh 'git clone https://github.com/cuongphung0503/auto.git'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'docker build -t testdemo .'
+                sh 'node --version'
             }
         }
     }
