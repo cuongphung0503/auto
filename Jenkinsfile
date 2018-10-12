@@ -1,12 +1,20 @@
 pipeline {
-    agent {
-        docker { image 'node:7-alpine' }
-    }
+      agent {
+         docker { image 'library/amazonlinux' }
+     }
     stages {
-        stage('Test') {
+        /* "Build" and "Test" stages omitted */
+   
+        stage('Checkout') {
             steps {
-                sh 'node --version'
+                sh 'git clone https://github.com/cuongphung0503/auto.git'
             }
-        }
-    }
-}
+         }
+ 
+         stage('Build') {
+             steps {
+                 sh 'docker build -t testdemo .'
+             }
+         }
+     }
+ }
