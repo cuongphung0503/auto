@@ -1,5 +1,5 @@
 pipeline {
-      agent none
+      agent any
     stages {
         /* "Build" and "Test" stages omitted */
    
