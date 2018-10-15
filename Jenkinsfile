@@ -13,7 +13,10 @@ pipeline {
  
          stage('Build') {
              steps {
-                 sh 'docker build -t auto .'
+                 script {
+                    def customImage = docker.build("my-image:${env.BUILD_ID}")
+                    customImage.push()
+                }
              }
          }
      }
