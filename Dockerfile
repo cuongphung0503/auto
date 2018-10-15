@@ -1,7 +1,5 @@
 FROM amazonlinux:1
 
-ENV home/root
-
 RUN yum update -y
 RUN yum install php*
 RUN yum install httpd24
