@@ -1,7 +1,5 @@
 pipeline {
-      agent {
-         docker { image 'library/amazonlinux' }
-     }
+      agent none
     stages {
         /* "Build" and "Test" stages omitted */
    
