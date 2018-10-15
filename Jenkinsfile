@@ -7,7 +7,7 @@ pipeline {
    
         stage('Checkout') {
             steps {
-                sh 'git clone https://github.com/cuongphung0503/auto.git'
+                sh '$git clone https://github.com/cuongphung0503/auto.git'
             }
          }
  
