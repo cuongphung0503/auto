@@ -13,7 +13,7 @@ pipeline {
  
          stage('Build') {
              steps {
-                 sh 'docker build -t testdemo .'
+                 sh 'docker build -t auto .'
              }
          }
      }
