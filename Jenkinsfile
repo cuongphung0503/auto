@@ -15,13 +15,13 @@ pipeline {
  
          stage('Build') {
              steps {
-                   sh 'ls -ll'
-                   sh 'docker build -t test .'
-                /* script {
+                  /* sh 'ls -ll'
+                   sh 'docker build -t test .' */
+                 script {
                     def customImage = docker.build("my-image:${env.BUILD_ID}")
                     customImage.push()
-                } */
+                } 
              }
-         }
+         }          
      }
  }
