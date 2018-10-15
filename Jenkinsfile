@@ -1,4 +1,8 @@
 pipeline {
+      environment {
+            registry = "012881927014.dkr.ecr.ap-northeast-1.amazonaws.com/testauto" 
+            registryCredential = 'creRegistry'
+      }
       agent any
     stages {
         /* "Build" and "Test" stages omitted */
