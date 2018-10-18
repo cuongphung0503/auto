@@ -19,7 +19,7 @@ pipeline {
                    sh 'docker build -t test .' */
                  script { 
                    //configure registry
-                   docker.withRegistry('https://012881927014.ecr.ap-northeast-1.amazonaws.com', 'ecr:ap-northeast-1:42a8999c-69bb-4e68-8120-9d4fe1f06854') {
+                   docker.withRegistry('https://012881927014.dkr.ecr.ap-northeast-1.amazonaws.com', 'ecr:ap-northeast-1:42a8999c-69bb-4e68-8120-9d4fe1f06854') {
 
                   //build image
                   def customImage = docker.build("my-image:${env.BUILD_ID}")
