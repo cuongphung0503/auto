@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "image": "testauto1",
+            "image": "testauto",
             "name": "testauto",
             "cpu": 10,
             "memory": 256,
