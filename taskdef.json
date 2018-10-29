@@ -1,5 +1,4 @@
 {
-    "family": "testauto",
     "containerDefinitions": [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
@@ -14,5 +13,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "family": "testauto"
 }
