@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "image": "%REPOSITORY_URI%",
+            "image": "012881927014.dkr.ecr.ap-northeast-1.amazonaws.com/testauto",
             "name": "testauto",
             "cpu": 10,
             "memory": 256,
