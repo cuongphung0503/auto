@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "image": "012881927014.dkr.ecr.ap-northeast-1.amazonaws.com/testauto",
+            "image": "012881927014.dkr.ecr.ap-northeast-1.amazonaws.com/testauto:v-%BUILD_NUMBER%",
             "name": "testauto",
             "cpu": 10,
             "memory": 256,
