@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "image": "testauto",
+            "image": "%REPOSITORY_URI%:v-%BUILD_NUMBER%",
             "name": "testauto",
             "cpu": 10,
             "memory": 256,
